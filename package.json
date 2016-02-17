@@ -10,7 +10,10 @@
   "replacements": [
     {"from": "@@name", "to": "Max Mustermann"},
     {"from": "@@street", "to": "Unter den Linden 1337"},
-    {"from": "@@city", "to": "12345 Berlin"},
+    {"from": "@@city", "to": "Berlin"},
+    {"from": "@@zipCode", "to": "12345"},
+    {"from": "@@mail", "to": "mail@example.org"},
+    {"from": "@@phone", "to": "00 49 1234 555 5555"},
     {"from": "@@skillslogan", "to": "Fähigkeit 1 • Fähigkeit 2 • Fähigkeit 3"},
     {"from": "@@linkedinLink", "to": "#"},
     {"from": "@@xingLink", "to": "#"},
