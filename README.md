@@ -1,4 +1,4 @@
-# [Portfolio Website]
+# Portfolio Website
 
 This project is a one page portfolio website based on Twitter Bootstrap. It is  fork of the [Freelancer](http://startbootstrap.com/template-overviews/freelancer/) project.
 
