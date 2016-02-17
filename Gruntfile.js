@@ -93,21 +93,20 @@ module.exports = function(grunt) {
           }
         },
         watch: {
-            scripts: {
-                files: ['js/<%= pkg.name %>.js'],
-                tasks: ['uglify'],
-                options: {
-                    spawn: false,
-                },
-            },
-            less: {
-                files: ['less/*.less'],
-                tasks: ['less'],
-                options: {
-                    spawn: false,
-                }
-            },
-        },
+          files: [
+            'css/**',
+            'js/**',
+            'font-awesome/**',
+            'less/**',
+            'mail/**',
+            '*.php',
+            '*.html',
+            '*.js',
+            '*.json',
+            '*.md'
+          ],
+          tasks: ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean']
+        }
     });
 
     // Load the plugins.
