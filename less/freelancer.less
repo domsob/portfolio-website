@@ -3,6 +3,7 @@
 
 body {
 	overflow-x: hidden;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -10,7 +11,7 @@ p {
 }
 
 p.small {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 a,
@@ -23,9 +24,9 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 200;
 }
 
 hr.star-light,
@@ -71,6 +72,21 @@ hr.star-primary:after {
 	margin: 0 auto;
 }
 
+li.page-scroll a {
+	color: darken(white, 20%) !important;
+}
+li.page-scroll a:hover {
+	color: white !important;
+}
+.navbar-brand {
+	color: white !important;
+	font-weight: 300;
+}
+.navbar-default .navbar-nav>.active>a{
+	color: white !important;
+	background-color: darken(@brand-primary, 12%) !important;
+}
+
 header {
 	text-align: center;
 	background: @brand-success;
@@ -85,10 +101,11 @@ header {
 	}
 	.intro-text {
 		.name {
+			color: white;
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: 'Raleway', Arial, Helvetica, sans-serif;
 			text-transform: uppercase;
-			font-weight: 700;
+			font-weight: 200;
 			font-size: 2em;
 		}
 		.skills {
@@ -137,7 +154,8 @@ header {
 }
 
 .navbar {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: darken(@brand-primary, 5%);
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	a:focus {
@@ -163,6 +181,7 @@ section {
     h2 {
     	margin: 0;
     	font-size: 3em;
+			padding-bottom: 25px;
     }
 }
 
@@ -327,6 +346,9 @@ footer {
 		background-color: @brand-primary;
 	}
 	.footer-col {
+		.list-pullup {
+			margin-top: -15px;
+		}
 		margin-bottom: 50px;
 	}
 	.footer-below {
