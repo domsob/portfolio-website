@@ -79,6 +79,8 @@ li.page-scroll a:hover {
 header {
   text-align: center;
   background: #7fbbda;
+  background-image: url(../img/blue.jpg);
+  background-attachment: fixed;
   color: white;
 }
 header .container {
