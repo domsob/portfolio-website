@@ -11,3 +11,7 @@ Grunt is used to build the website:
 * After that you can build the website with "grunt"
 * The files will be placed in the "build" directory
 
+## Use
+
+The template can be used directly. Just update the profile picture and change the content in the "replacement" element in "package.json".
+

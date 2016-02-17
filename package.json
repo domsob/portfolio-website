@@ -2,12 +2,32 @@
   "name": "freelancer",
   "title": "Freelancer",
   "version": "1.0.6",
-  "homepage": "http://startbootstrap.com/template-overviews/freelancer",
-  "author": "Start Bootstrap",
+  "author": "Start Bootstrap, forked and extended by domsob",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "url": "https://github.com/domsob/portfolio-website/blob/gh-pages/LICENSE"
   },
+  "replacements": [
+    {"from": "@@name", "to": "Max Mustermann"},
+    {"from": "@@street", "to": "Unter den Linden 1337"},
+    {"from": "@@city", "to": "12345 Berlin"},
+    {"from": "@@skillslogan", "to": "Fähigkeit 1 • Fähigkeit 2 • Fähigkeit 3"},
+    {"from": "@@linkedinLink", "to": "#"},
+    {"from": "@@xingLink", "to": "#"},
+    {"from": "@@facebookLink", "to": "#"},
+    {"from": "@@githubLink", "to": "#"},
+    {"from": "@@year", "to": "2016"},
+    {"from": "@@about", "to": "Über mich"},
+    {"from": "@@skills", "to": "Skills"},
+    {"from": "@@cv", "to": "Erfahrung"},
+    {"from": "@@contact", "to": "Kontakt"},
+    {"from": "@@fontAwesomeSkill1", "to": "fa-code"},
+    {"from": "@@skillDescription1", "to": "<strong>Fähigkeit 1:</strong> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."},
+    {"from": "@@fontAwesomeSkill2", "to": "fa-cogs"},
+    {"from": "@@skillDescription2", "to": "<strong>Fähigkeit 2:</strong> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."},
+    {"from": "@@fontAwesomeSkill3", "to": "fa-comment"},
+    {"from": "@@skillDescription3", "to": "<strong>Fähigkeit 3:</strong> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."}
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-less": "~0.11.4",
@@ -17,10 +37,11 @@
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-clean": "*",
     "grunt-htmlclean": "*",
+    "grunt-text-replace": "*",
     "grunt-contrib-watch": "~0.6.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+    "url": "https://github.com/domsob/portfolio-website.git"
   }
 }

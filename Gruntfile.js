@@ -92,6 +92,13 @@ module.exports = function(grunt) {
             ],
           }
         },
+        replace: {
+          target: {
+            src: ['build/index.html'],
+            overwrite: true,
+            replacements: "<%= pkg.replacements %>"
+          }
+        },
         watch: {
           files: [
             'css/**',
@@ -105,7 +112,7 @@ module.exports = function(grunt) {
             '*.json',
             '*.md'
           ],
-          tasks: ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean']
+          tasks: ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean', 'replace']
         }
     });
 
@@ -116,9 +123,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-htmlclean');
+    grunt.loadNpmTasks('grunt-text-replace');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean']);
+    grunt.registerTask('default', ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean', 'replace']);
 
 };

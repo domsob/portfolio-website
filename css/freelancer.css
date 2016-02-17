@@ -76,6 +76,9 @@ li.page-scroll a:hover {
   color: white !important;
   background-color: #161f29 !important;
 }
+p.skill-icon {
+  font-size: 54px;
+}
 header {
   text-align: center;
   background: #7fbbda;
