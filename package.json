@@ -29,7 +29,43 @@
     "fontAwesomeSkill2": "fa-cogs",
     "skillDescription2": "<strong>Fähigkeit 2:</strong> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.",
     "fontAwesomeSkill3": "fa-comment",
-    "skillDescription3": "<strong>Fähigkeit 3:</strong> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."
+    "skillDescription3": "<strong>Fähigkeit 3:</strong> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.",
+    "listCv": {
+      "snippet": "<li><span class=\"description\">@@description</span><span class=\"institution\">@@institution</span><span class=\"time\">@@start bis @@end</span></li>",
+      "isFile": false,
+      "items": [
+        {
+          "description": "Junior Executive XYZ",
+          "institution": "XYZ International GmbH",
+          "start": "Mai 2012",
+          "end": " Oktober 2014"
+        },
+        {
+          "description": "0815 Manager",
+          "institution": "XYZ GmbH",
+          "start": "Januar 2012",
+          "end": "Februar 2014"
+        },
+        {
+          "description": "0815 Manager",
+          "institution": "XYZ GmbH",
+          "start": "Januar 2012",
+          "end": "Februar 2014"
+        },
+        {
+          "description": "0815 Manager",
+          "institution": "XYZ GmbH",
+          "start": "Januar 2012",
+          "end": "Februar 2014"
+        },
+        {
+          "description": "Technische Universität XYZ-Stadt",
+          "institution": "XYZogie",
+          "start": "Juli 2012",
+          "end": "September 2014"
+        }
+      ]
+    }
   },
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -256,6 +256,62 @@ section.success {
 	}
 }
 
+div.verticalLine {
+	width: 3px;
+	height: 500px;
+	background-color: black;
+	margin: 0 auto;
+	margin-top: -470px;
+	&::after {
+		display: block;
+		content: "";
+		width: 0px;
+		height: 0px;
+		-webkit-transform:rotate(360deg);
+		border-style: solid;
+		border-width: 0 11px 19px 10px;
+		border-color: transparent transparent black transparent;
+		position: relative;
+		top: -15px;
+		left: -9px;
+	}
+}
+ul.cvList {
+	margin: 0 auto;
+	width: 1000px !important;
+	padding-top: 35px;
+	li {
+		list-style: none;
+		padding-bottom: 25px;
+	}
+	li:nth-child(odd) {
+		text-align: left;
+		margin-left: 490px;
+	}
+	li:nth-child(even) {
+		text-align: right;
+		margin-right: 535px;
+	}
+	li:last-child {
+		padding-bottom: 0;
+	}
+	.description {
+		display: block;
+		font-weight: 700;
+		font-size: 22px;
+	}
+	.institution {
+		display: block;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	.time {
+		display: block;
+		font-weight: 200;
+		font-size: 14px;
+	}
+}
+
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
