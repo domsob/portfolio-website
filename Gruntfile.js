@@ -92,11 +92,16 @@ module.exports = function(grunt) {
             ],
           }
         },
-        replace: {
-          target: {
-            src: ['build/index.html'],
-            overwrite: true,
-            replacements: "<%= pkg.replacements %>"
+        'json-template-replace': {
+          custom_options: {
+            options: {
+              prefix: "@@",
+              suffix: "",
+              replace: "<%= pkg.replacement %>"
+            },
+            files: {
+              'build/index.html': ['index.html']
+            }
           }
         },
         watch: {
@@ -112,7 +117,7 @@ module.exports = function(grunt) {
             '*.json',
             '*.md'
           ],
-          tasks: ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean', 'replace']
+          tasks: ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean', 'json-template-replace']
         }
     });
 
@@ -124,9 +129,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-htmlclean');
     grunt.loadNpmTasks('grunt-text-replace');
+    grunt.loadNpmTasks('json-template-replace');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean', 'replace']);
+    grunt.registerTask('default', ['clean', 'uglify', 'less', 'cssmin', 'copy', 'htmlclean', 'json-template-replace']);
 
 };
