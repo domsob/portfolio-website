@@ -258,10 +258,10 @@ section.success {
 
 div.verticalLine {
 	width: 3px;
-	height: 500px;
+	height: 700px;
 	background-color: black;
 	margin: 0 auto;
-	margin-top: -470px;
+	margin-top: -670px;
 	&::after {
 		display: block;
 		content: "";
@@ -309,6 +309,45 @@ ul.cvList {
 		display: block;
 		font-weight: 200;
 		font-size: 14px;
+	}
+}
+@media(max-width:1200px) {
+	ul.cvList {
+		width: 800px !important;
+		li:nth-child(odd) {
+			margin-left: 395px;
+		}
+		li:nth-child(even) {
+			margin-right: 435px;
+		}
+	}
+}
+@media(max-width:1000px) {
+	ul.cvList {
+		width: 600px !important;
+		li:nth-child(odd) {
+			margin-left: 290px;
+		}
+		li:nth-child(even) {
+			margin-right: 325px;
+		}
+	}
+	div.verticalLine {
+		height: 700px + 20px;
+		margin-top: -700px;
+	}
+}
+@media(max-width:640px) {
+	ul.cvList {
+		width: auto !important;
+		ul, li {
+			margin-left: -43px !important;
+			margin-right: 0 !important;
+			text-align: center !important;
+		}
+	}
+	div.verticalLine {
+		display: none;
 	}
 }
 

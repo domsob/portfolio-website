@@ -234,10 +234,10 @@ section.success a.active {
 }
 div.verticalLine {
   width: 3px;
-  height: 500px;
+  height: 700px;
   background-color: black;
   margin: 0 auto;
-  margin-top: -470px;
+  margin-top: -670px;
 }
 div.verticalLine::after {
   display: block;
@@ -286,6 +286,46 @@ ul.cvList .time {
   display: block;
   font-weight: 200;
   font-size: 14px;
+}
+@media (max-width: 1200px) {
+  ul.cvList {
+    width: 800px !important;
+  }
+  ul.cvList li:nth-child(odd) {
+    margin-left: 395px;
+  }
+  ul.cvList li:nth-child(even) {
+    margin-right: 435px;
+  }
+}
+@media (max-width: 1000px) {
+  ul.cvList {
+    width: 600px !important;
+  }
+  ul.cvList li:nth-child(odd) {
+    margin-left: 290px;
+  }
+  ul.cvList li:nth-child(even) {
+    margin-right: 325px;
+  }
+  div.verticalLine {
+    height: 720px;
+    margin-top: -700px;
+  }
+}
+@media (max-width: 640px) {
+  ul.cvList {
+    width: auto !important;
+  }
+  ul.cvList ul,
+  ul.cvList li {
+    margin-left: -43px !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+  }
+  div.verticalLine {
+    display: none;
+  }
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
